@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @model.name %>
+</p>
+
+<p>
+  <strong>Provider aptour:</strong>
+  <%= @model.provider_aptour_id %>
+</p>
+
+<p>
+  <strong>Operator aptour:</strong>
+  <%= @model.operator_aptour_id %>
+</p>
+
+<%= link_to 'Edit', edit_hotel_path(@model) %> |
+<%= link_to 'Back', hotels_path %>

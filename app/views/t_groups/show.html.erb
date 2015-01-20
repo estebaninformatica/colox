@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @t_group.name %>
+</p>
+
+<p>
+  <strong>Provider aptour:</strong>
+  <%= @t_group.provider_aptour_id %>
+</p>
+
+<p>
+  <strong>Operator aptour:</strong>
+  <%= @t_group.operator_aptour_id %>
+</p>
+
+<%= link_to 'Edit', edit_t_group_path(@t_group) %> |
+<%= link_to 'Back', t_groups_path %>

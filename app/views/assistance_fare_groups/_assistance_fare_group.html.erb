@@ -1,0 +1,27 @@
+<% model = assistance_fare_group %>
+<%= form_for(model, remote: true) do |f| %>
+<tr>
+    <td>
+	    <div class="field">
+	   		<%= f.text_field :name,:class => "name" %>
+	  	</div>
+  	</td>
+    <td>
+		<div class="field">
+			<%= f.hidden_field :operator_aptour_id, {:id => "model"+model.id.to_s,:class => "aptour_select2 " }%>
+		</div>
+    </td>
+    <td>
+		<div class="field">
+			<%= f.select(:provider_aptour_id,{},{}, {:id => "model"+model.id.to_s+"provider",:class => "form-control" })%>
+			<%= hidden_field "model"+model.id.to_s+"provider_default","", :value => (model.provider_aptour_id.to_s unless model.provider_aptour_id.nil?) %>
+
+		</div>
+    </td>
+	<td >
+		<div class="actions">
+		<%= f.submit "Guardar", class: "btn btn-primary btn-sm" %>
+		</div>
+	</td>
+</tr>
+<% end %>

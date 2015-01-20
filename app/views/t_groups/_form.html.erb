@@ -1,0 +1,13 @@
+<%= simple_form_for(@t_group) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :provider_aptour_id %>
+    <%= f.input :operator_aptour_id %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

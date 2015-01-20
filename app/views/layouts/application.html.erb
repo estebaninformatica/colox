@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head><%= render "aplication/head" %></head>
+  <body>
+  	
+    <%= render "aplication/navbar" %>
+
+    <section id="flash"></section>
+
+    <div class="content">
+      <div id="main" class="container">
+        <%= yield %>
+      </div>
+    </div> <!-- /content -->
+
+    <footer id="main-footer">
+      <div class="container"><%= t :signature %></div>
+    </footer>
+
+    <div id="modal" class="modal fade" role="dialog" >
+      <div class="modal-dialog modal-lg" >
+        <div class="modal-content">
+          <!-- Rendered by Ajax -->
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <%= javascript_include_tag "application" %>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+.btn-new,
+.expiration-date,
+.action-icon,
+.service-icon,
+.clock-icon,
+.reserve-icon {
+  font-family: FontAwesome;
+}
+
+.clock-icon:before {
+  content: "\f017"; // :clock-o
+  padding-right: 0.5em;
+}
+
+li > a.service-icon:before {
+  padding-right: 1em;
+}
+
+.service .service-icon:before {
+  padding-right: 0.5em;
+}
+
+.service-icon {
+  &.AerialData:before     {content: "\f072";} // :plane
+  &.AssistanceData:before {content: "\f0fa";} // :medkit
+  &.CarData:before        {content: "\f1b9";} // :car
+  &.CircuitData:before    {content: "\f06b";} // :gift
+  &.CruiseData:before     {content: "\f13d";} // :anchor
+  &.ExcursionData:before  {content: "\f030";} // :camera
+  &.HotelData:before      {content: "\f1ad";} // :building
+  &.TrainData:before      {content: "\f085";} // :cogs
+  &.TransportData:before  {content: "\f207";} // :bus
+  &.GenericData:before    {content: "\f059";} // :question-mark
+}
+
+span.reserve-icons > span.service-icon {
+  padding-left: 0.5em;
+}
+
+span.colored,
+span.reserve-icon,
+li > a > span.service-icon,
+li > a.service-icon:before,
+.reserve .service-icon {
+  display: inline-block;
+  width: 20px;
+}
+
+//Si el servicio esta todavia en borrador, es decir el vendedor no lo solicito: color gris
+//Si el servicio esta en Hacer: color amarillo
+//Si esta requerido: color celeste
+//Si esta confirmado: color verde
+//Si esta rechazado: rojo
+//Si esta cancelado: naranja
+.colored-service-icon {
+  &.draft           {color: inherit;}// :default
+  &.accepted        {color: #18bc9c;}// :success // {color: #3498db;}// :info
+  &.canceled        {color: #f39c12;}// :warning
+  &.rejected        {color: #e74c3c;}// :danger
+  &.required        {color: #3498db;}// :info
+  &.solicited       {color: #FFD700;}// :yellow
+  &.asked_to_cancel {color: #f39c12;}// :warning
+}
+
+li.colored,
+span.colored {
+  &.accept        {color: #18bc9c;}// :success // {color: #3498db;}// :info
+  &.cancel        {color: #f39c12;}// :warning
+  &.reject        {color: #e74c3c;}// :danger
+  &.archive       {color: #2c3e50;}// :primary
+  &.restore       {color: #2c3e50;}// :primary
+  &.take          {color: inherit;}// :default
+  &.require       {color: inherit;}// :default
+  &.solicite      {color: inherit;}// :default
+  &.ask_to_cancel {color: #f39c12;}// :warning
+  &.send_message  {color: #18bc9c;}// :success
+}
+
+.action-icon {
+  &.accept:before        {content: "\f14a";}// :check-square
+  &.cancel:before        {content: "\f146";}// :minus-square
+  &.reject:before        {content: "\f00d";}// :times
+  &.archive:before       {content: "\f187";}// :archive
+  &.restore:before       {content: "\f0e2";}// :undo
+  &.take:before          {content: "\f0fe";}// :plus-square
+  &.require:before       {content: "\f098";}// :phone-square
+  &.solicite:before      {content: "\f061";}// :arrow-right
+  &.ask_to_cancel:before {content: "\f068";}// :minus
+  &.send_message:before  {content: "\f0e0";}// :envelope
+}
+
+.reserve-icon {
+  &.archived:before  {content: "\f187";}// :archive
+  &.taken:before     {content: "\f0a4";}// :hand-o-right
+  &.solicited:before {content: "\f1d8";}// :send
+  &.pending:before   {content: "\f141";}// :ellipsis-h
+}
+
+.expiration-date {
+  margin-right: 0.5em;
+  &:before {content: "\f071";}
+}

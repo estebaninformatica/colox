@@ -1,0 +1,20 @@
+<h1>Servicios</h1>
+<%= paginate @models %>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Provider aptour</th>
+      <th>Operator aptour</th>
+      <th colspan="1"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <%= render @models %>
+  </tbody>
+</table>
+<%= paginate @models %>
+<br>
+

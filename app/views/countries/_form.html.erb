@@ -1,0 +1,29 @@
+<%= bootstrap_form_for(@country) do |f| %>
+  <% if @country.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@country.errors.count, "error") %> prohibited this country from being saved:</h2>
+
+      <ul>
+      <% @country.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+  <%= f.label "Destination Aptour" %><br>
+  <%= f.hidden_field :destination_aptour_id, {:id => "aptour_destinations_select2", :class => "span6" }%>
+  <br></br>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :destination_aptour_id %><br>
+    <%= f.number_field :destination_aptour_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

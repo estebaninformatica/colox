@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @assistance_fare_group.name %>
+</p>
+
+<p>
+  <strong>Provider aptour:</strong>
+  <%= @assistance_fare_group.provider_aptour_id %>
+</p>
+
+<p>
+  <strong>Operator aptour:</strong>
+  <%= @assistance_fare_group.operator_aptour_id %>
+</p>
+
+<%= link_to 'Edit', edit_assistance_fare_group_path(@assistance_fare_group) %> |
+<%= link_to 'Back', assistance_fare_groups_path %>

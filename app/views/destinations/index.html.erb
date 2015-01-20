@@ -1,0 +1,21 @@
+<h1>Lista Destinos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Destination aptour</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+          <%= render @destinations %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Destination', new_destination_path %>
+
+

@@ -1,0 +1,380 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require font-awesome
+ *= require paper3-1
+ *= require jquery.ui.datepicker
+ *= require froala
+ *= require select2 
+ *= require select2-bootstrap
+ *= require icons
+ *= require_self
+*/
+
+//primary {color: #2c3e50;}
+//success {color: #18bc9c;}
+//info    {color: #3498db;}
+//warning {color: #f39c12;}
+//danger  {color: #e74c3c;}
+
+label {
+  display: inherit;
+}
+
+.panel-danger > .panel-heading {color: #fff;}
+
+header.page-header {
+  margin-top: 0px;
+  h1 {
+    font-size: 2em;
+    padding-top: 0px;
+  }
+}
+
+#main-footer {
+  text-align: center;
+}
+
+#ui-datepicker-div { // For datepickers to show in front of modals.
+  z-index: 9999999 !important;
+}
+
+.filter {
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+
+  margin-bottom: 1em;
+  padding: 2em 2em 1em 2em;
+  border-radius: 3px;
+  .submit-filter-form {
+    text-align: right;
+    margin-top: 2.14em;
+  }
+}
+
+.filter-row > div {
+  .form-control {
+    height: 43px;
+    padding-left: 0.5em !important;
+    padding-right: 0px;
+  }
+  .datepicker {
+    padding-left: 0px !important;
+    input {font-size: 1em !important;}
+  }
+  .row > [class*="col-"] {
+    padding-left: 1px !important;
+    padding-right: 1px !important;
+  }
+}
+
+.reserve > header {
+  cursor: pointer;
+}
+
+section.service {
+  padding-bottom:0px;
+  margin-bottom: 2px;
+  & > header {cursor: pointer;}
+}
+
+.service-info {
+  .input-group {
+    & > .input-group-btn > a{ margin-right: 10px !important; }
+    & > .input-group-btn > a.label-btn,
+    & > input.form-control {
+      pointer-events: none;
+      cursor: default;
+    }
+  }
+}
+
+span.service-data-type {
+  display: inline-block;
+  width: 20em;
+  padding-left:1em;
+  padding-right:1em;
+}
+
+#payment { margin-bottom: 1em;}
+
+.element,
+#payment,
+.styled-form {
+  .input-group {border: 1px solid #eee;}
+
+  .input-group-addon {
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    background-color: #ccc;
+  }
+
+  input {
+    background-color: #fff;
+    padding-left: 1em !important;
+  }
+}
+
+#tariff-specific {
+  .input-group-addon, input {
+    border-color: #ddd !important;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+  }
+
+  .input-group-addon {
+    background-color: #eee;
+    border-left: 1px solid;
+  }
+  input {
+    border-right: 1px solid;
+  }
+
+  .tariff-section {
+    border-top: 2px dashed #999;
+  }
+}
+
+
+ul.resume {
+  max-width: 50%;
+  li {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: none;
+  }
+  .value {
+    text-align: right;
+    font-family: monospace;
+    background-color: inherit;
+    color: inherit;
+  }
+}
+
+section#payment,
+section.element {
+  border: 1px solid #ddd !important;
+  padding: 1em !important;
+  background-color: #e5e5e5;  
+}
+
+.nav-tabs {
+  li > a {
+    background-color: #eee;
+    border-right: 1px solid #e5e5e5;
+  }
+  li > a:hover, li.active > a { background-color: #e5e5e5; }
+}
+
+.timepicker-input {
+  padding-left: 0px !important !important;
+}
+
+.row-less-padding {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  [class*="col-"] {
+    padding-left: 1px !important;
+    padding-right: 1px !important;
+  }
+  select { padding-left: 0px !important; padding-right: 0px !important; }
+  input { font-size: 14px !important; }
+  input.hasDatepicker { padding-left: 6px !important; }
+}
+
+
+.notifications-flash > article { margin-bottom: 0px;}
+
+ul#notification-list {
+  margin-bottom: 2px;
+}
+
+#notification-form-section {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+
+.reserve-complete-name {
+  font-weight: bold;
+}
+
+section.service-collapse {
+  section.modal-body {
+    background-color: #ccc;
+  }
+}
+
+section.history {
+  span.action-label {
+    display: inline-block;
+    width: 16em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  li.action-description {
+    white-space: pre-line;
+  }
+}
+
+#reserves .panel { margin-bottom: 0px; }
+
+ul.reserve-details-list { 
+  list-style-type: none;
+  padding-left: 1em;
+  small {font-size: 70%;}
+}
+
+.solicited-at {
+  width: 12em;
+}
+
+.is-button {
+  cursor: pointer;
+}
+
+hr { border-top: 2px dashed #999;}
+
+.ticket-group {
+  background-color: #999;
+}
+
+#flash {
+  margin: 0px;
+  padding-bottom: 30px;
+  position: fixed !important;
+  bottom:0% !important;
+  left:2% !important;
+  z-index: 99999999999 !important;
+
+  .close {font-size: 2rem;}
+
+  .alert {
+    padding-bottom: 30px !important;
+    width: 300px;
+    margin-bottom: 2px;
+  }
+
+  .alert-info,
+  .alert-success {
+    background-color: rgba(40, 90, 40, 0.9);
+  }
+
+}
+
+.navbar-number {
+  position: relative;
+  right: 20%;
+  color: #fff;
+  background-color: red;
+  font-size: 0.8em;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 4px;
+  padding-left: 4px;
+  border-radius: 10px;
+}
+
+.navbar-icon {
+  font-size: 1.6em;
+}
+
+#navbar-expirations,
+#navbar-notifications {
+
+  ul.dropdown-menu {
+    width: 300px;
+    padding-top: 1px;
+    & > li > a {
+      height: 54px;
+      overflow: hidden;      
+      border-bottom: solid 1px #e5e5e5;
+    }
+  }
+  .icon {
+    font-size: 2em;
+  }
+  .pull-right {
+    font-size: 0.8em;
+  }
+  .small {
+    line-height: 1.4em;
+  }
+}
+
+.service {
+  .checked {
+    background-color: #f0f0f0;
+  }
+  
+  .unchecked {
+    background-color: #ffffff;
+    font-weight: bolder;
+  }
+}
+
+.internal-id {
+  width: 32px;
+  display: inline-block;
+  text-align: right;
+  background-color: black;
+}
+
+.badge.internal-id {
+  width: 16px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  background-color: #eee;
+  color: black;
+}
+#providers > li,
+#operators > li {
+  padding: 8px;
+}
+
+#new_voucher_form,
+#new_liquidation_form {
+
+  //.liquidation_form_services_ids {
+  padding-left: 2em;
+  //}
+
+  input[type="checkbox"] {
+    height: 1.4em;
+  }
+}
+
+.btn-new {
+  font-family: FontAwesome;
+  float: right;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+  &:before {
+    content: "\f067"; // :plus
+    padding-right: 0.5em;
+  }
+}
+
+.btn-dropdown {
+  font-family: FontAwesome;
+  &:after {
+    content: "\f0d7"; // :caret-down
+    padding-left: 0.5em;
+  }
+}
+
+.people-count:before{
+  content: "×";
+}
