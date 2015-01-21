@@ -1,0 +1,19 @@
+<h1>Operador</h1>
+<%= paginate @models %>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Operator aptour</th>
+      <th colspan="1"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <%= render @models %>
+  </tbody>
+</table>
+<%= paginate @models %>
+<br>
+

@@ -19,7 +19,6 @@
 //= require operadorPrestador
 //= require select2
 //= require bootstrap3-1
-//= require_directory ./specific
 //= require timepicker
 //= require notify
 //= require countries

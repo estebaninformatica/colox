@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @travel_operator.name %>
+</p>
+
+<p>
+  <strong>Operator aptour:</strong>
+  <%= @travel_operator.operator_aptour_id %>
+</p>
+
+<%= link_to 'Edit', edit_travel_operator_path(@travel_operator) %> |
+<%= link_to 'Back', travel_operators_path %>

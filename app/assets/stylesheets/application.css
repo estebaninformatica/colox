@@ -33,15 +33,6 @@ textarea, textarea.form-control, input.form-control, input[type=text], input[typ
 {
   min-width: 100%; 
 }
- .spin
-}
-{
-  background: red; /* outline */
-  > *
-  {
-    background: #EEE; /* hand */
-  }
-}
 .navbar-custom {
     background-color:#229922;
     color:#ffffff;

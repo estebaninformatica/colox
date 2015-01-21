@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :travel_operators
+
   resources :t_groups
 
   resources :assistance_fare_groups
