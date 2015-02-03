@@ -4,7 +4,7 @@ require "httparty"
 class OperatorsController < ApplicationController
 
   def index
-    url = File.join(AeroAPI::Operator.site.to_s, 'operators', 'name', params[:q])
+    url = File.join(AeroAPI::Operator.site.to_s, 'operators', 'name', params[:q].gsub(/\s+/, '+'))
     render json: HTTParty.get(url)
   end
 

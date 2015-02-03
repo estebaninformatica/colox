@@ -4,7 +4,8 @@ class ServicesController < ApplicationController
   # GET /services
   # GET /services.json
   def index
-    @models = Service.order("name").page(params[:page]).per(50)
+    @search = Service.search(params[:q])
+    @models = @search.result.page(params[:page]).per(50)
   end
 
   # GET /services/1

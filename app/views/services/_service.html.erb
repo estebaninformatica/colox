@@ -2,6 +2,9 @@
 <%= form_for(model, remote: true) do |f| %>
 <tr>
     <td>
+        <%= model.destination.try(:name)%>
+    </td>
+    <td>
 	    <div class="field">
 	   		<%= f.text_field :name,:class => "name" %>
 	  	</div>
